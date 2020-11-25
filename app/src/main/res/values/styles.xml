@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#9D0B0E</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="teams" >
+        <item name="android:textSize">30sp</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:textColor">#9D0B0E</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="table" >
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">25dp</item>
+        <item name="android:textColor">#9D0B0E</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="table2" >
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#FF5722</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="h1">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/font</item>
+
+    </style>
+    <style name="h2">
+        <item name="android:textSize">25sp</item>
+
+    </style>
+    <style name="h3">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="custom">
+
+
+    </style>
+</resources>

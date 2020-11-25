@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-57dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:id="@+id/titlebar"
+            >
+            <ImageButton
+                android:id="@+id/BackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:layout_margin="5dp"
+                android:onClick="teams"
+                android:tint="#9D0B0E"
+                />
+            <ImageView
+                android:id="@+id/logoimage"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo"/>
+            <ImageView
+                android:id="@+id/menuImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu"
+                android:layout_margin="5dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/teamsmembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Members"
+            style="@style/h1"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchicons"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/searchImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <Spinner
+                android:id="@+id/searchyear"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:autofillHints="2020"
+                android:background="@drawable/shapes"
+                android:entries="@array/years"
+                android:textColor="#972E2E"
+                android:layout_marginRight="15dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shapes"  >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Administration Board"
+                style="@style/teams"
+                android:onClick="multimediaTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multimedia Team"
+                style="@style/teams"
+                android:onClick="multimediaTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Socialmedia Team"
+                style="@style/teams"
+                android:onClick="socialmediaTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+
+            <TextView
+                style="@style/teams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HR Team"
+                android:onClick="HRTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PR Team"
+                style="@style/teams"
+                android:onClick="PRTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Development Team"
+                style="@style/teams"
+                android:onClick="DevelopmentTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Organization Team"
+                style="@style/teams"
+                android:onClick="OrganizationTeam"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="1.5dp"
+                android:background="#9D0B0E"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

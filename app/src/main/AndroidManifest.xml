@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.muifx">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lecture"></activity>
+        <activity android:name=".signin" />
+        <activity android:name=".signup" />
+        <activity android:name=".live" />
+        <activity android:name=".schedules" />
+        <activity android:name=".Team" />
+        <activity android:name=".Test" />
+        <activity android:name=".Organization" />
+        <activity android:name=".Development" />
+        <activity android:name=".PR" />
+        <activity android:name=".HR" />
+        <activity android:name=".Socialmedia" />
+        <activity android:name=".Multimedia" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
